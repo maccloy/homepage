@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#outer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#outer #mainContainer {
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 800px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  text-align: center;
+}
+
+.outlined {
+  border: 1px solid black;
+  padding-right: 10px;
+  padding-left:10px;
+  padding-bottom: 5px;
+  padding-top: 2px;
+}
+
+body {
+  background-color: rgb(48,48,48);
+  background-size: cover;
+  opacity: 0.9;
+  background-position: center;
+}
+
+.photoBackground{
+  background-image: url("../img/background2.jpg");
+}
+
+#dynamicText {
+  font-weight: bold;
+  font-size: 5em;
+  color: white
+}
+
+
+#mainContainer {
+  min-width: 75%;
+}
+
+
+#staticText {
+  width: 1000px;
+  font-weight: bold;
+  font-size: 4em;
+  color: black;
+  display: inline-block;
+  min-width: 800px;
+  border-radius: 25px;
+  border: 0px solid black
+}
+
+
+#selfie {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#selfieDiv {
+  text-align: center;
+}
+
+#paragraph1 {
+  float: right;
+  padding: 0px;
+  font-size: 1.25em;
+  display: inline-block;
+  width: 50%;
+  color: white;
+  text-align: left;
+}
+
+
+
+#paragraph2 {
+  float: right;
+  border: 0px solid red;
+  padding: 20px;
+  font-size: 1.25em;
+  display: inline-block;
+  width: 90%;
+  color: white;
+  text-align: left;
+}
+
+
+#paragraph3 {
+  float: right;
+  padding: 20px;
+  font-size: 1.25em;
+  display: inline-block;
+  width: 90%;
+  color: white;
+  text-align: left;
+}
+
+
+#aboutPageContainer {
+  margin-top: 10%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  #dynamicText {
+    font-size: 2em;
+    color: white
+  }
+  
+  .dropdown-item {
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  #dynamicText {
+    font-size: 3em;
+    color: white
+  }
+  
+    .dropdown-item {
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 1000px)) {
+  #dynamicText {
+    font-size: 5em;
+    color: white
+  }
+  
+    
+    .dropdown-item {
+    text-align: right;
+  }
+  
+}
+
+
+.dividers {
+  border-left: 1px solid blue;
+  border-right: 1px solid blue;
+  color: white;
+  text-align: center;
+}
+
+
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: white !important;
+  color: black !important;
+}
